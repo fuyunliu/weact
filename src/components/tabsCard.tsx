@@ -2,13 +2,14 @@ import * as React from "react";
 import { Card, Space } from "antd";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import {
-    faThumbtack,
+    faFan,
     faFire,
     faBolt,
-    faLightbulb
+    faLightbulb,
 } from "@fortawesome/free-solid-svg-icons";
+import ArticleList from "./articleList";
 
-const tabListNoTitle = [
+const tabList = [
     {
         key: 'follow',
         tab: <Space><Icon icon={faLightbulb} /><span>关注</span></Space>,
@@ -19,7 +20,7 @@ const tabListNoTitle = [
     },
     {
         key: 'pin',
-        tab: <Space><Icon icon={faThumbtack} /><span>动态</span></Space>,
+        tab: <Space><Icon icon={faFan} /><span>想法</span></Space>,
     },
     {
         key: 'hot',
@@ -27,10 +28,11 @@ const tabListNoTitle = [
     },
 ]
 
-const contentListNoTitle: {[index: string]: any} = {
-    hot: <p>hot content</p>,
-    home: <p>home content</p>,
-    follow: <p>follow content</p>,
+const contentList: {[index: string]: any} = {
+    hot: <ArticleList />,
+    pin: <ArticleList />,
+    home: <ArticleList />,
+    follow: <ArticleList />,
 }
 
 class TabsCard extends React.Component {
@@ -46,13 +48,15 @@ class TabsCard extends React.Component {
     render() {
         return (
             <Card
-            tabList={tabListNoTitle}
+            bordered={false}
+            style={{ marginTop: "10px", marginRight: "10px" }}
+            tabList={tabList}
             activeTabKey={this.state.key}
             onTabChange={
                 key => {this.onTabChange(key, 'key');}
             }
             >
-                {contentListNoTitle[this.state.key]}
+                {contentList[this.state.key]}
 
             </Card>
         )

@@ -1,0 +1,38 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.ant-list-item-action-split {
+    background-color: unset;
+}
+.ant-popover-inner-content {
+    padding: unset;
+}
+.ant-popover-arrow {
+    display: none;
+}
+.ant-card-actions {
+    border-top: unset;
+}
+.ant-card-actions {
+    li:not(:last-child) {
+        border-right: unset;
+    }
+}
+.ant-card-meta {
+    margin: unset;
+}
+.ant-card-meta-detail {
+    div:not(:last-child) {
+        margin-bottom: unset;
+    }
+}
+.ant-statistic-title {
+    text-align: center;
+}
