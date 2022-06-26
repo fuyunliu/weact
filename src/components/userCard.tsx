@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Card, Button, Avatar, Row, Col, Statistic, Skeleton, Space } from "antd";
-import users from "../services/users"
+import * as users from "../services/users"
 import { User } from "../services/Interfaces"
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import {

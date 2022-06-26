@@ -6,7 +6,7 @@ const gridStyle: React.CSSProperties = {
     textAlign: "center",
 };
 
-class HotCategory extends React.Component {
+export class HotCategory extends React.Component {
     render() {
         return (
             <Card title="热门分类">
@@ -25,7 +25,7 @@ class HotCategory extends React.Component {
     }
 }
 
-class HotTag extends React.Component {
+export class HotTag extends React.Component {
     render() {
         return (
             <Card title="热门标签">
@@ -44,7 +44,7 @@ class HotTag extends React.Component {
     }
 }
 
-class HotTopic extends React.Component {
+export class HotTopic extends React.Component {
     render() {
         return (
             <Card title="热门话题">
@@ -62,9 +62,3 @@ class HotTopic extends React.Component {
         );
     }
 }
-
-export default {
-    HotCategory,
-    HotTag,
-    HotTopic,
-};

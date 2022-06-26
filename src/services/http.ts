@@ -2,7 +2,7 @@ import axios from "axios";
 import { message } from "antd";
 
 const instance = axios.create({
-    timeout: 1000,
+    // timeout: 1000,
     baseURL: 'http://127.0.0.1:8000',
     headers: {'Content-Type': 'application/json'}
 });

@@ -9,7 +9,7 @@ import RightMenu from "./components/rightMenu";
 import TabsCard from "./components/tabsCard";
 import Login from "./components/login";
 import useToken from "./components/useToken";
-import hotCard from "./components/hotCard";
+import * as hotCard from "./components/hotCard";
 
 
 const { Search } = Input;

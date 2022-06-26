@@ -102,7 +102,7 @@ class ArticleList extends React.Component {
                         <Space>
                             <a href={item.author.username}>{item.author.nickname}</a>
                             发布在
-                            <a href={item.category}>{item.category}</a>
+                            <a href={item.category.slug}>{item.category.name}</a>
                             <Tooltip title={item.created}><span>{dayjs(item.created).fromNow()}</span></Tooltip>
                         </Space>
                         }

@@ -13,6 +13,13 @@ export interface User {
     about_me: string;
 }
 
+export interface Category {
+    id: number;
+    name: string;
+    desc: string;
+    slug: string;
+}
+
 export interface Article {
     id: number;
     author: User;
@@ -30,6 +37,6 @@ export interface Article {
     created: string;
     updated: string;
     slug: string;
-    category: string;
+    category: Category;
     topics: Array<string>;
 }
